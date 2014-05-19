@@ -82,6 +82,7 @@ You can customize the following properties of `NSRSwipeTabViewController`
 @property (strong, nonatomic) UIColor *tabBarIndicatorColor;
 @property (strong, nonatomic) UIFont *tabBarFont;
 @property (strong, nonatomic) UIColor *tabBarTextColor;
+@property (assign, nonatomic) CGFloat tabBarItemMargin;
 @property (assign, nonatomic) BOOL enableSwipe;
 
 ```

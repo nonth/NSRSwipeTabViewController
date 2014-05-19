@@ -24,6 +24,7 @@
 @property (strong, nonatomic) UIColor *indicatorBackgroundColor;
 @property (strong, nonatomic) UIColor *textColor;
 @property (strong, nonatomic) UIFont *font;
+@property (assign, nonatomic) CGFloat itemMargin;
 
 - (void)setItemTitles:(NSArray *)itemTitles;
 - (void)selectedAtIndex:(NSUInteger)index;

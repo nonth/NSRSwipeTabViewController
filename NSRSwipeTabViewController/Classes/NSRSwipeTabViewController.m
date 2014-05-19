@@ -147,6 +147,12 @@ static CGFloat const NSRSwipeTabBarHeight = 37.0f;
     [self.swipeTabBar setTextColor:tabBarTextColor];
 }
 
+- (void)setTabBarItemMargin:(CGFloat)tabBarItemMargin
+{
+    _tabBarItemMargin = tabBarItemMargin;
+    [self.swipeTabBar setItemMargin:tabBarItemMargin];
+}
+
 - (void)setEnableSwipe:(BOOL)enableSwipe
 {
     _enableSwipe = enableSwipe;

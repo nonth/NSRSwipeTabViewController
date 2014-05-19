@@ -15,6 +15,7 @@
 @property (strong, nonatomic) UIColor *tabBarIndicatorColor;
 @property (strong, nonatomic) UIFont *tabBarFont;
 @property (strong, nonatomic) UIColor *tabBarTextColor;
+@property (assign, nonatomic) CGFloat tabBarItemMargin;
 @property (assign, nonatomic) BOOL enableSwipe;
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL)animated;
@@ -23,5 +24,7 @@
 - (void)setTabBarIndicatorColor:(UIColor *)tabBarIndicatorColor;
 - (void)setTabBarFont:(UIFont *)tabBarFont;
 - (void)setTabBarTextColor:(UIColor *)tabBarTextColor;
+- (void)setTabBarItemMargin:(CGFloat)tabBarItemMargin;
+- (void)setEnableSwipe:(BOOL)enableSwipe;
 
 @end

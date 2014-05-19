@@ -22,8 +22,9 @@
     
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
     self.swipeTabViewController = [[NSRSwipeTabViewController alloc] init];
-
+    
 //    Uncomment to customize NSRSwipeTabViewController
+//    [self.swipeTabViewController setTabBarItemMargin:10.0f];
 //    [self.swipeTabViewController setEnableSwipe:NO];
 //    [self.swipeTabViewController setTabBarFont:[UIFont boldSystemFontOfSize:18.0f]];
 //    [self.swipeTabViewController setTabBarBackgroundColor:[UIColor blackColor]];
