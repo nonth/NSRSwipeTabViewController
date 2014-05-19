@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/nonth/NSRSwipeTabViewController"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/nonth/NSRSwipeTabViewController/master/screenshot.png"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
