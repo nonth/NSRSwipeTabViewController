@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/nonth/NSRSwipeTabViewController.git", :commit => "267967a1bcb367646fd4ca1ce82421e49daddec8" }
 
-  s.source_files  = "NSRSwipeTabViewController/Classes"
+  s.source_files  = "NSRSwipeTabViewController/Classes", "NSRSwipeTabViewController/Classes/Categories"
 
-  s.public_header_files = "NSRSwipeTabViewController/Classes/*.h"
+  s.public_header_files = "NSRSwipeTabViewController/Classes/*.h", "NSRSwipeTabViewController/Classes/Categories/*.h"
 
   s.requires_arc = true
 
