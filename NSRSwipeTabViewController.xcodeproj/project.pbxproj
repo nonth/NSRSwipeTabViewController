@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01353A791929BA9200133360 /* NSRPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01353A781929BA9200133360 /* NSRPageViewController.m */; };
+		016344AC19246D3300C0BD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AB19246D3300C0BD20 /* Foundation.framework */; };
+		016344AE19246D3300C0BD20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AD19246D3300C0BD20 /* CoreGraphics.framework */; };
+		016344B019246D3300C0BD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AF19246D3300C0BD20 /* UIKit.framework */; };
+		016344B619246D3300C0BD20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 016344B419246D3300C0BD20 /* InfoPlist.strings */; };
+		016344B819246D3300C0BD20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344B719246D3300C0BD20 /* main.m */; };
+		016344BC19246D3300C0BD20 /* NSRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344BB19246D3300C0BD20 /* NSRAppDelegate.m */; };
+		016344BF19246D3300C0BD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016344BD19246D3300C0BD20 /* Main.storyboard */; };
+		016344C219246D3300C0BD20 /* NSRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344C119246D3300C0BD20 /* NSRViewController.m */; };
+		016344C419246D3300C0BD20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016344C319246D3300C0BD20 /* Images.xcassets */; };
+		016344CB19246D3300C0BD20 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344CA19246D3300C0BD20 /* XCTest.framework */; };
+		016344CC19246D3300C0BD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AB19246D3300C0BD20 /* Foundation.framework */; };
+		016344CD19246D3300C0BD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AF19246D3300C0BD20 /* UIKit.framework */; };
+		016344E319246EA700C0BD20 /* NSRSwipeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344E219246EA700C0BD20 /* NSRSwipeTabViewController.m */; };
+		016344E619246EEC00C0BD20 /* NSRSwipeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344E519246EEC00C0BD20 /* NSRSwipeTabBar.m */; };
+		016344EA1924789800C0BD20 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344E91924789800C0BD20 /* NSString+Helper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		016344CE19246D3300C0BD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016344A019246D3300C0BD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016344A719246D3300C0BD20;
+			remoteInfo = NSRSwipeTabViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01353A771929BA9200133360 /* NSRPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRPageViewController.h; sourceTree = "<group>"; };
+		01353A781929BA9200133360 /* NSRPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRPageViewController.m; sourceTree = "<group>"; };
+		016344A819246D3300C0BD20 /* NSRSwipeTabViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSRSwipeTabViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		016344AB19246D3300C0BD20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		016344AD19246D3300C0BD20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		016344AF19246D3300C0BD20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		016344B319246D3300C0BD20 /* NSRSwipeTabViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSRSwipeTabViewController-Info.plist"; sourceTree = "<group>"; };
+		016344B519246D3300C0BD20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		016344B719246D3300C0BD20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		016344B919246D3300C0BD20 /* NSRSwipeTabViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRSwipeTabViewController-Prefix.pch"; sourceTree = "<group>"; };
+		016344BA19246D3300C0BD20 /* NSRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRAppDelegate.h; sourceTree = "<group>"; };
+		016344BB19246D3300C0BD20 /* NSRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRAppDelegate.m; sourceTree = "<group>"; };
+		016344BE19246D3300C0BD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		016344C019246D3300C0BD20 /* NSRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRViewController.h; sourceTree = "<group>"; };
+		016344C119246D3300C0BD20 /* NSRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRViewController.m; sourceTree = "<group>"; };
+		016344C319246D3300C0BD20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		016344C919246D3300C0BD20 /* NSRSwipeTabViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSRSwipeTabViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		016344CA19246D3300C0BD20 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		016344E119246EA700C0BD20 /* NSRSwipeTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRSwipeTabViewController.h; sourceTree = "<group>"; };
+		016344E219246EA700C0BD20 /* NSRSwipeTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRSwipeTabViewController.m; sourceTree = "<group>"; };
+		016344E419246EEC00C0BD20 /* NSRSwipeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRSwipeTabBar.h; sourceTree = "<group>"; };
+		016344E519246EEC00C0BD20 /* NSRSwipeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRSwipeTabBar.m; sourceTree = "<group>"; };
+		016344E81924789800C0BD20 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
+		016344E91924789800C0BD20 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		016344A519246D3300C0BD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016344AE19246D3300C0BD20 /* CoreGraphics.framework in Frameworks */,
+				016344B019246D3300C0BD20 /* UIKit.framework in Frameworks */,
+				016344AC19246D3300C0BD20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016344C619246D3300C0BD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016344CB19246D3300C0BD20 /* XCTest.framework in Frameworks */,
+				016344CD19246D3300C0BD20 /* UIKit.framework in Frameworks */,
+				016344CC19246D3300C0BD20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0163449F19246D3300C0BD20 = {
+			isa = PBXGroup;
+			children = (
+				016344B119246D3300C0BD20 /* NSRSwipeTabViewController */,
+				016344AA19246D3300C0BD20 /* Frameworks */,
+				016344A919246D3300C0BD20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		016344A919246D3300C0BD20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				016344A819246D3300C0BD20 /* NSRSwipeTabViewController.app */,
+				016344C919246D3300C0BD20 /* NSRSwipeTabViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		016344AA19246D3300C0BD20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				016344AB19246D3300C0BD20 /* Foundation.framework */,
+				016344AD19246D3300C0BD20 /* CoreGraphics.framework */,
+				016344AF19246D3300C0BD20 /* UIKit.framework */,
+				016344CA19246D3300C0BD20 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		016344B119246D3300C0BD20 /* NSRSwipeTabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				016344E019246D4D00C0BD20 /* Classes */,
+				016344BA19246D3300C0BD20 /* NSRAppDelegate.h */,
+				016344BB19246D3300C0BD20 /* NSRAppDelegate.m */,
+				016344BD19246D3300C0BD20 /* Main.storyboard */,
+				016344C019246D3300C0BD20 /* NSRViewController.h */,
+				016344C119246D3300C0BD20 /* NSRViewController.m */,
+				016344C319246D3300C0BD20 /* Images.xcassets */,
+				016344B219246D3300C0BD20 /* Supporting Files */,
+			);
+			path = NSRSwipeTabViewController;
+			sourceTree = "<group>";
+		};
+		016344B219246D3300C0BD20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				016344B319246D3300C0BD20 /* NSRSwipeTabViewController-Info.plist */,
+				016344B419246D3300C0BD20 /* InfoPlist.strings */,
+				016344B719246D3300C0BD20 /* main.m */,
+				016344B919246D3300C0BD20 /* NSRSwipeTabViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		016344E019246D4D00C0BD20 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				016344E71924787500C0BD20 /* Categories */,
+				016344E119246EA700C0BD20 /* NSRSwipeTabViewController.h */,
+				016344E219246EA700C0BD20 /* NSRSwipeTabViewController.m */,
+				016344E419246EEC00C0BD20 /* NSRSwipeTabBar.h */,
+				016344E519246EEC00C0BD20 /* NSRSwipeTabBar.m */,
+				01353A771929BA9200133360 /* NSRPageViewController.h */,
+				01353A781929BA9200133360 /* NSRPageViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		016344E71924787500C0BD20 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				016344E81924789800C0BD20 /* NSString+Helper.h */,
+				016344E91924789800C0BD20 /* NSString+Helper.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		016344A719246D3300C0BD20 /* NSRSwipeTabViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016344DA19246D3300C0BD20 /* Build configuration list for PBXNativeTarget "NSRSwipeTabViewController" */;
+			buildPhases = (
+				016344A419246D3300C0BD20 /* Sources */,
+				016344A519246D3300C0BD20 /* Frameworks */,
+				016344A619246D3300C0BD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSRSwipeTabViewController;
+			productName = NSRSwipeTabViewController;
+			productReference = 016344A819246D3300C0BD20 /* NSRSwipeTabViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		016344C819246D3300C0BD20 /* NSRSwipeTabViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016344DD19246D3300C0BD20 /* Build configuration list for PBXNativeTarget "NSRSwipeTabViewControllerTests" */;
+			buildPhases = (
+				016344C519246D3300C0BD20 /* Sources */,
+				016344C619246D3300C0BD20 /* Frameworks */,
+				016344C719246D3300C0BD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				016344CF19246D3300C0BD20 /* PBXTargetDependency */,
+			);
+			name = NSRSwipeTabViewControllerTests;
+			productName = NSRSwipeTabViewControllerTests;
+			productReference = 016344C919246D3300C0BD20 /* NSRSwipeTabViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		016344A019246D3300C0BD20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NSR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nonthawat Srichad";
+				TargetAttributes = {
+					016344C819246D3300C0BD20 = {
+						TestTargetID = 016344A719246D3300C0BD20;
+					};
+				};
+			};
+			buildConfigurationList = 016344A319246D3300C0BD20 /* Build configuration list for PBXProject "NSRSwipeTabViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0163449F19246D3300C0BD20;
+			productRefGroup = 016344A919246D3300C0BD20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				016344A719246D3300C0BD20 /* NSRSwipeTabViewController */,
+				016344C819246D3300C0BD20 /* NSRSwipeTabViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		016344A619246D3300C0BD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016344C419246D3300C0BD20 /* Images.xcassets in Resources */,
+				016344B619246D3300C0BD20 /* InfoPlist.strings in Resources */,
+				016344BF19246D3300C0BD20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016344C719246D3300C0BD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		016344A419246D3300C0BD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016344C219246D3300C0BD20 /* NSRViewController.m in Sources */,
+				016344E619246EEC00C0BD20 /* NSRSwipeTabBar.m in Sources */,
+				016344BC19246D3300C0BD20 /* NSRAppDelegate.m in Sources */,
+				01353A791929BA9200133360 /* NSRPageViewController.m in Sources */,
+				016344B819246D3300C0BD20 /* main.m in Sources */,
+				016344E319246EA700C0BD20 /* NSRSwipeTabViewController.m in Sources */,
+				016344EA1924789800C0BD20 /* NSString+Helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		016344C519246D3300C0BD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		016344CF19246D3300C0BD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016344A719246D3300C0BD20 /* NSRSwipeTabViewController */;
+			targetProxy = 016344CE19246D3300C0BD20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		016344B419246D3300C0BD20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016344B519246D3300C0BD20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		016344BD19246D3300C0BD20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016344BE19246D3300C0BD20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		016344D819246D3300C0BD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		016344D919246D3300C0BD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		016344DB19246D3300C0BD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSRSwipeTabViewController/NSRSwipeTabViewController-Prefix.pch";
+				INFOPLIST_FILE = "NSRSwipeTabViewController/NSRSwipeTabViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		016344DC19246D3300C0BD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSRSwipeTabViewController/NSRSwipeTabViewController-Prefix.pch";
+				INFOPLIST_FILE = "NSRSwipeTabViewController/NSRSwipeTabViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		016344DE19246D3300C0BD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSRSwipeTabViewController.app/NSRSwipeTabViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSRSwipeTabViewController/NSRSwipeTabViewController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSRSwipeTabViewControllerTests/NSRSwipeTabViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		016344DF19246D3300C0BD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSRSwipeTabViewController.app/NSRSwipeTabViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSRSwipeTabViewController/NSRSwipeTabViewController-Prefix.pch";
+				INFOPLIST_FILE = "NSRSwipeTabViewControllerTests/NSRSwipeTabViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		016344A319246D3300C0BD20 /* Build configuration list for PBXProject "NSRSwipeTabViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016344D819246D3300C0BD20 /* Debug */,
+				016344D919246D3300C0BD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016344DA19246D3300C0BD20 /* Build configuration list for PBXNativeTarget "NSRSwipeTabViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016344DB19246D3300C0BD20 /* Debug */,
+				016344DC19246D3300C0BD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016344DD19246D3300C0BD20 /* Build configuration list for PBXNativeTarget "NSRSwipeTabViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016344DE19246D3300C0BD20 /* Debug */,
+				016344DF19246D3300C0BD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 016344A019246D3300C0BD20 /* Project object */;
+}
