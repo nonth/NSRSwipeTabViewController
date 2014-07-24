@@ -50,9 +50,12 @@ static CGFloat const NSRSwipeTabBarIndicatorViewHeight = 2.0f;
     for (UIButton *buttonItem in self.itemViews) {
         CGFloat width = [buttonItem.titleLabel.text sizeWithFontSize:buttonItem.titleLabel.font.pointSize].width;
         width += margin;
-        CGRect frame = CGRectMake(x, 0.0f, width, CGRectGetHeight(self.frame));
+        CGRect frame = buttonItem.frame;
+        frame.origin.x = x;
+        frame.size.width = (width < NSRSwipeTabBarItemViewWidth)? NSRSwipeTabBarItemViewWidth : width;
+        frame.size.height = CGRectGetHeight(self.frame);
         [buttonItem setFrame:frame];
-        x += width;
+        x += frame.size.width;
     }
     
     [self.scrollView setContentSize:CGSizeMake(x, CGRectGetHeight(self.scrollView.frame))];
