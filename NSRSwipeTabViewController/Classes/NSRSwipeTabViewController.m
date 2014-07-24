@@ -129,6 +129,12 @@ static CGFloat const NSRSwipeTabBarHeight = 37.0f;
     [self.swipeTabBar setBackgroundColor:tabBarBackgroundColor];
 }
 
+- (void)setTabBarIndicatorHeight:(CGFloat)height
+{
+    _tabBarIndicatorHeight = height;
+    [self.swipeTabBar setIndicatorHeight:height];
+}
+
 - (void)setTabBarIndicatorColor:(UIColor *)tabBarIndicatorColor
 {
     _tabBarIndicatorColor = tabBarIndicatorColor;

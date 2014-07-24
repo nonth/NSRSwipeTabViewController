@@ -103,7 +103,10 @@ static CGFloat const NSRSwipeTabBarIndicatorViewHeight = 2.0f;
 
 - (UIView *)generateIndicatorView:(CGRect)frame
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, frame.size.width, NSRSwipeTabBarIndicatorViewHeight)];
+    CGFloat height = (self.indicatorHeight == 0)? NSRSwipeTabBarIndicatorViewHeight : self.indicatorHeight;
+    
+    CGRect viewFrame = CGRectMake(0.0f, 0.0f, frame.size.width, height);
+    UIView *view = [[UIView alloc] initWithFrame:viewFrame];
     [view setBackgroundColor:[UIColor clearColor]];
     [view setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     return view;

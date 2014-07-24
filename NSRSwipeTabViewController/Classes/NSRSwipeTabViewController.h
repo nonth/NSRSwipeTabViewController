@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSArray *viewControllers;
 @property (strong, nonatomic) UIColor *tabBarBackgroundColor;
 @property (strong, nonatomic) UIColor *tabBarIndicatorColor;
+@property (assign, nonatomic) CGFloat tabBarIndicatorHeight;
 @property (strong, nonatomic) UIFont *tabBarFont;
 @property (strong, nonatomic) UIColor *tabBarTextColor;
 @property (assign, nonatomic) CGFloat tabBarItemMargin;
@@ -21,6 +22,7 @@
 - (void)setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL)animated;
 - (void)setViewControllers:(NSArray *)viewControllers;
 - (void)setTabBarBackgroundColor:(UIColor *)tabBarBackgroundColor;
+- (void)setTabBarIndicatorHeight:(CGFloat)height;
 - (void)setTabBarIndicatorColor:(UIColor *)tabBarIndicatorColor;
 - (void)setTabBarFont:(UIFont *)tabBarFont;
 - (void)setTabBarTextColor:(UIColor *)tabBarTextColor;
