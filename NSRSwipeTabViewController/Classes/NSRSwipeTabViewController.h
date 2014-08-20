@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class NSRSwipeTabViewController;
+
+@protocol NSRSwipeTabViewControllerDelegate <NSObject>
+
+- (void)swipeTabViewController:(NSRSwipeTabViewController *)swipeTabViewController didTransitionToViewController:(UIViewController *)viewController;
+
+@end
+
 @interface NSRSwipeTabViewController : UIViewController
 
 @property (strong, nonatomic) NSArray *viewControllers;
@@ -18,6 +26,7 @@
 @property (strong, nonatomic) UIColor *tabBarTextColor;
 @property (assign, nonatomic) CGFloat tabBarItemMargin;
 @property (assign, nonatomic) BOOL enableSwipe;
+@property (strong, nonatomic) id<NSRSwipeTabViewControllerDelegate> delegate;
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL)animated;
 - (void)setViewControllers:(NSArray *)viewControllers;

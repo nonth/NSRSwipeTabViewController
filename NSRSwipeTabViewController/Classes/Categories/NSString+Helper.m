@@ -10,26 +10,26 @@
 
 @implementation NSString (Helper)
 
-- (CGSize)sizeWithFontSize:(CGFloat)fontSize
+- (CGSize)sizeFromFont:(UIFont *)font linebreakMode:(NSLineBreakMode)linebreakMode inFrame:(CGRect)rect
 {
-//    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-//        
-//        // iOS < 6
-//        return [self sizeWithFont:[UIFont systemFontOfSize:fontSize]];
-//    } else {
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        
+        // iOS < 6
+        return [self sizeWithFont:font constrainedToSize:rect.size lineBreakMode:linebreakMode];
+    } else {
     
         // iOS 7
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-        [paragraphStyle setLineBreakMode:NSLineBreakByTruncatingTail];
+        [paragraphStyle setLineBreakMode:linebreakMode];
         
-        NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:fontSize], NSParagraphStyleAttributeName:paragraphStyle};
+        NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
         
         CGRect rect = [self boundingRectWithSize: CGSizeMake(0.0f, MAXFLOAT)
                                          options:  NSStringDrawingUsesLineFragmentOrigin
                                       attributes:  attributes
                                          context:  nil];
         return rect.size;
-//    }
+    }
 }
 
 @end

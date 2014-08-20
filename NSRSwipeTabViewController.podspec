@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   s.author             = { "Nonthawat Srichad" => "nonthz@gmail.com" }
   s.social_media_url   = "https://twitter.com/nonth"
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "6.1"
 
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "6.1"
 
   s.source       = { :git => "https://github.com/nonth/NSRSwipeTabViewController.git", :commit => "267967a1bcb367646fd4ca1ce82421e49daddec8" }
 

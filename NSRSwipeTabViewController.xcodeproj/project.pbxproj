@@ -17,23 +17,10 @@
 		016344BF19246D3300C0BD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016344BD19246D3300C0BD20 /* Main.storyboard */; };
 		016344C219246D3300C0BD20 /* NSRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344C119246D3300C0BD20 /* NSRViewController.m */; };
 		016344C419246D3300C0BD20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016344C319246D3300C0BD20 /* Images.xcassets */; };
-		016344CB19246D3300C0BD20 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344CA19246D3300C0BD20 /* XCTest.framework */; };
-		016344CC19246D3300C0BD20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AB19246D3300C0BD20 /* Foundation.framework */; };
-		016344CD19246D3300C0BD20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016344AF19246D3300C0BD20 /* UIKit.framework */; };
 		016344E319246EA700C0BD20 /* NSRSwipeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344E219246EA700C0BD20 /* NSRSwipeTabViewController.m */; };
 		016344E619246EEC00C0BD20 /* NSRSwipeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344E519246EEC00C0BD20 /* NSRSwipeTabBar.m */; };
 		016344EA1924789800C0BD20 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 016344E91924789800C0BD20 /* NSString+Helper.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		016344CE19246D3300C0BD20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 016344A019246D3300C0BD20 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 016344A719246D3300C0BD20;
-			remoteInfo = NSRSwipeTabViewController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01353A771929BA9200133360 /* NSRPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRPageViewController.h; sourceTree = "<group>"; };
@@ -52,7 +39,6 @@
 		016344C019246D3300C0BD20 /* NSRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRViewController.h; sourceTree = "<group>"; };
 		016344C119246D3300C0BD20 /* NSRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRViewController.m; sourceTree = "<group>"; };
 		016344C319246D3300C0BD20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		016344C919246D3300C0BD20 /* NSRSwipeTabViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSRSwipeTabViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016344CA19246D3300C0BD20 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		016344E119246EA700C0BD20 /* NSRSwipeTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRSwipeTabViewController.h; sourceTree = "<group>"; };
 		016344E219246EA700C0BD20 /* NSRSwipeTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRSwipeTabViewController.m; sourceTree = "<group>"; };
@@ -73,16 +59,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		016344C619246D3300C0BD20 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				016344CB19246D3300C0BD20 /* XCTest.framework in Frameworks */,
-				016344CD19246D3300C0BD20 /* UIKit.framework in Frameworks */,
-				016344CC19246D3300C0BD20 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				016344A819246D3300C0BD20 /* NSRSwipeTabViewController.app */,
-				016344C919246D3300C0BD20 /* NSRSwipeTabViewControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,24 +159,6 @@
 			productReference = 016344A819246D3300C0BD20 /* NSRSwipeTabViewController.app */;
 			productType = "com.apple.product-type.application";
 		};
-		016344C819246D3300C0BD20 /* NSRSwipeTabViewControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 016344DD19246D3300C0BD20 /* Build configuration list for PBXNativeTarget "NSRSwipeTabViewControllerTests" */;
-			buildPhases = (
-				016344C519246D3300C0BD20 /* Sources */,
-				016344C619246D3300C0BD20 /* Frameworks */,
-				016344C719246D3300C0BD20 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				016344CF19246D3300C0BD20 /* PBXTargetDependency */,
-			);
-			name = NSRSwipeTabViewControllerTests;
-			productName = NSRSwipeTabViewControllerTests;
-			productReference = 016344C919246D3300C0BD20 /* NSRSwipeTabViewControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,11 +168,6 @@
 				CLASSPREFIX = NSR;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Nonthawat Srichad";
-				TargetAttributes = {
-					016344C819246D3300C0BD20 = {
-						TestTargetID = 016344A719246D3300C0BD20;
-					};
-				};
 			};
 			buildConfigurationList = 016344A319246D3300C0BD20 /* Build configuration list for PBXProject "NSRSwipeTabViewController" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -231,7 +183,6 @@
 			projectRoot = "";
 			targets = (
 				016344A719246D3300C0BD20 /* NSRSwipeTabViewController */,
-				016344C819246D3300C0BD20 /* NSRSwipeTabViewControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +195,6 @@
 				016344C419246D3300C0BD20 /* Images.xcassets in Resources */,
 				016344B619246D3300C0BD20 /* InfoPlist.strings in Resources */,
 				016344BF19246D3300C0BD20 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		016344C719246D3300C0BD20 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,22 +215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		016344C519246D3300C0BD20 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		016344CF19246D3300C0BD20 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 016344A719246D3300C0BD20 /* NSRSwipeTabViewController */;
-			targetProxy = 016344CE19246D3300C0BD20 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		016344B419246D3300C0BD20 /* InfoPlist.strings */ = {
@@ -340,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -372,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -404,46 +333,6 @@
 			};
 			name = Release;
 		};
-		016344DE19246D3300C0BD20 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSRSwipeTabViewController.app/NSRSwipeTabViewController";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSRSwipeTabViewController/NSRSwipeTabViewController-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NSRSwipeTabViewControllerTests/NSRSwipeTabViewControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		016344DF19246D3300C0BD20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSRSwipeTabViewController.app/NSRSwipeTabViewController";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NSRSwipeTabViewController/NSRSwipeTabViewController-Prefix.pch";
-				INFOPLIST_FILE = "NSRSwipeTabViewControllerTests/NSRSwipeTabViewControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,15 +350,6 @@
 			buildConfigurations = (
 				016344DB19246D3300C0BD20 /* Debug */,
 				016344DC19246D3300C0BD20 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		016344DD19246D3300C0BD20 /* Build configuration list for PBXNativeTarget "NSRSwipeTabViewControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				016344DE19246D3300C0BD20 /* Debug */,
-				016344DF19246D3300C0BD20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

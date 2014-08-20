@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "NSRSwipeTabViewController.h"
 
-@interface NSRViewController : UIViewController
-
-@property (strong, nonatomic) IBOutlet UIView *containerView;
+@interface NSRViewController : UIViewController <NSRSwipeTabViewControllerDelegate>
 
 @end

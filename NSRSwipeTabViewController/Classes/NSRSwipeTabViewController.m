@@ -44,8 +44,10 @@ static CGFloat const NSRSwipeTabBarHeight = 37.0f;
 
 - (void)initSubViews
 {
-    [self.parentViewController setEdgesForExtendedLayout:UIRectEdgeNone];
-        
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+        [self.parentViewController setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
+    
     CGRect swipeTabBarFrame = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.view.frame), NSRSwipeTabBarHeight);
     self.swipeTabBar = [[NSRSwipeTabBar alloc] initWithFrame:swipeTabBarFrame];
     [self.swipeTabBar setAutoresizingMask:UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth];
@@ -170,6 +172,10 @@ static CGFloat const NSRSwipeTabBarHeight = 37.0f;
 
 - (void)swipeTabBar:(NSRSwipeTabBar *)swipeTabBar didSelectItemAtIndex:(NSInteger)index
 {
+    if ([self.delegate respondsToSelector:@selector(swipeTabViewController:didTransitionToViewController:)]) {
+        UIViewController *vc = [self.viewControllers objectAtIndex:index];
+        [self.delegate swipeTabViewController:self didTransitionToViewController:vc];
+    }
     [self setSelectedIndex:index animated:YES];
 }
 
@@ -180,6 +186,10 @@ static CGFloat const NSRSwipeTabBarHeight = 37.0f;
 {
     UIViewController *vc = [self.pageViewController.viewControllers firstObject];
     NSInteger index = [self.viewControllers indexOfObject:vc];
+    
+    if ([self.delegate respondsToSelector:@selector(swipeTabViewController:didTransitionToViewController:)]) {
+        [self.delegate swipeTabViewController:self didTransitionToViewController:vc];
+    }
     
     self.selectedIndex = index;
     

@@ -10,6 +10,6 @@
 
 @interface NSString (Helper)
 
-- (CGSize)sizeWithFontSize:(CGFloat)fontSize;
+- (CGSize)sizeFromFont:(UIFont *)font linebreakMode:(NSLineBreakMode)linebreakMode inFrame:(CGRect)rect;
 
 @end

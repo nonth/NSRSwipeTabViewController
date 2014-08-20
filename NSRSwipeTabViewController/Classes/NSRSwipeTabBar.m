@@ -48,7 +48,11 @@ static CGFloat const NSRSwipeTabBarIndicatorViewHeight = 2.0f;
     CGFloat x = 0.0f;
     
     for (UIButton *buttonItem in self.itemViews) {
-        CGFloat width = [buttonItem.titleLabel.text sizeWithFontSize:buttonItem.titleLabel.font.pointSize].width;
+        
+        CGFloat width = [buttonItem.titleLabel.text sizeFromFont:buttonItem.titleLabel.font
+                                                   linebreakMode:buttonItem.titleLabel.lineBreakMode
+                                                         inFrame:buttonItem.frame].width;
+        
         width += margin;
         CGRect frame = buttonItem.frame;
         frame.origin.x = x;

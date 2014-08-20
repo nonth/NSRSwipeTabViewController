@@ -20,11 +20,15 @@
 {
     [super viewDidLoad];
     
-    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
+    
     self.swipeTabViewController = [[NSRSwipeTabViewController alloc] init];
+    [self.swipeTabViewController setDelegate:self];
     
 //    Uncomment to customize NSRSwipeTabViewController
-//    [self.swipeTabViewController setTabBarItemMargin:10.0f];
+//    [self.swipeTabViewcontainerViewroller setTabBarItemMargin:10.0f];
 //    [self.swipeTabViewController setEnableSwipe:NO];
 //    [self.swipeTabViewController setTabBarFont:[UIFont boldSystemFontOfSize:18.0f]];
 //    [self.swipeTabViewController setTabBarBackgroundColor:[UIColor blackColor]];
@@ -33,7 +37,7 @@
     
     [self.swipeTabViewController willMoveToParentViewController:self];
     [self.swipeTabViewController.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
-    [self.swipeTabViewController.view setFrame:self.view.frame];
+    [self.swipeTabViewController.view setFrame:self.view.bounds];
     [self.view addSubview:self.swipeTabViewController.view];
     [self.swipeTabViewController didMoveToParentViewController:self];
     
@@ -63,6 +67,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma mark NSRSwipeTabViewContorller Delegate Methods
+
+- (void)swipeTabViewController:(NSRSwipeTabViewController *)swipeTabViewController didTransitionToViewController:(UIViewController *)viewController
+{
+    NSLog(@"transition to vc: %@", viewController);
 }
 
 @end
