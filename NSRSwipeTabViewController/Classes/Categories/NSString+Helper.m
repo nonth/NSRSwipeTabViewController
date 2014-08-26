@@ -20,15 +20,19 @@
     
         // iOS 7
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-        [paragraphStyle setLineBreakMode:linebreakMode];
+        paragraphStyle.lineBreakMode = linebreakMode;
         
-        NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+        NSDictionary *attributes = @{
+                                     NSFontAttributeName:font,
+                                     NSParagraphStyleAttributeName:paragraphStyle
+                                     };
         
-        CGRect rect = [self boundingRectWithSize: CGSizeMake(0.0f, MAXFLOAT)
-                                         options:  NSStringDrawingUsesLineFragmentOrigin
-                                      attributes:  attributes
-                                         context:  nil];
-        return rect.size;
+        CGRect frame = [self boundingRectWithSize: CGSizeMake(rect.size.width, MAXFLOAT)
+                                          options: NSStringDrawingUsesLineFragmentOrigin
+                                       attributes: attributes
+                                          context: nil];
+        NSLog(@"%f", frame.size.width);
+        return frame.size;
     }
 }
 
