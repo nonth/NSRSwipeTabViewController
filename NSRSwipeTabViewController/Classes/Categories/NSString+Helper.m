@@ -31,7 +31,7 @@
                                           options: NSStringDrawingUsesLineFragmentOrigin
                                        attributes: attributes
                                           context: nil];
-        NSLog(@"%f", frame.size.width);
+        
         return frame.size;
     }
 }
